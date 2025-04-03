@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+    <head>html5 공부하기</head>
+
+    <body>
+
+        <ul>
+            <li>
+                <a href="./ex01.html">h1~h6요소</a>
+            </li>
+    
+            <li>
+                <a href="./ex02.html">p, br, blockquote, q, strong, em 요소</a>
+            </li>
+    
+            <li>
+                <a href="./ex03.html">ol, ul, li 요소</a>
+            </li>
+    
+            <li>
+                <a href="./ex04.html">img , a요소</a>
+            </li>
+    
+            <li>
+                <a href="./ex05.html">table 요소</a>
+            </li>
+    
+            <li>
+                <a href="./ex06.html">테이블-게시판예제</a>
+            </li>
+    
+            <li>
+                <a href="./ex07.html">절대경로와 상대경로</a>
+            </li>
+        </ul>
+
+        <hr>
+        
+        <h1>html공부</h1>
+        <h2>table 요소</h2>
+
+        <table border="1">
+            
+            <colgroup>
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+                <col style="width: 120px;">
+                <col style="width: 180px;">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th colspan="2">모집직군</th>
+                    <th>모집전공</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th colspan="2">생산기술직</th>
+                    <td>화학공학</td>
+                    <td rowspan="3">전공관련 자격증 우대</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">생산지원직</th>
+                    <th>공무</th>
+                    <td>기계,전기</td>
+                </tr>
+
+                <tr>
+                    <th>안전환경</th>
+                    <td>안전,환경</td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">연구개발직</th>
+                    <td>화학, 화학공학</td>
+                    <td>석사</td>
+                </tr>
+            </tbody>
+        </table>
+<br><br><br><br>
+        <table border="1">
+            <tr>
+                <td colspan="2">모집직군</td>
+                <td>모집전공</td>
+                <td>비고</td>
+                <td>근무지</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">생산기술직</td>
+                <td>화학공학</td>
+                <td rowspan="3">전공관련 자격증 우대</td>
+                <td rowspan="5">충남 서산</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">생산지원직</td>
+                <td>공무</td>
+                <td>기계,전기</td>
+            </tr>
+
+            <tr>
+                <td>안전환경</td>
+                <td>안전,환경</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">연구개발직</td>
+                <td>화학, 화학공학</td>
+                <td>석사</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">경영지원직</td>
+                <td>상경계열</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">영업마케팅직</td>
+                <td>상경계열</td>
+                <td></td>
+                <td>서울 중구</td>
+            </tr>
+        </table>
+
+        <h2>테이블-게시판예제</h2>
+
+        <table border="1">
+           
+           <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>조회수</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>99</td>
+                    <td>99번째글입니다.</td>
+                    <td>12</td>
+                    <td>한서희</td>
+                    <td>2025-03-28</td>
+                </tr>
+
+                <tr>
+                    <td>98</td>
+                    <td>98번째글입니다.</td>
+                    <td>22</td>
+                    <td>성예준</td>
+                    <td>2025-03-27</td>
+                </tr>
+            </tbody>
+        
+        </table>   
+
+        <br><br>
+            
+
+        <table border="1">
+            <colgroup>
+                <col style="width: 120px;">
+                <col style="width: 80px;">    
+                <col style="width: 80px;">    
+                <col style="width: 80px;">        
+                <col style="width: 80px;">    
+            </colgroup>
+
+            <caption>제주특별자치도 학교현황</caption>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+            </thead>
+                
+            <tbody>
+                <tr>
+                    <th>유치원</th>
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                
+                <tr>
+                    <th>초등학교</th>
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+
+                <tr>
+                    <th>중학교</th>
+                    <td>44</td>
+                    <td>699</td>
+                    <td>21274</td>
+                    <td>1412</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>272</td>
+                    <td>2671</td>
+                    <td>64507</td>
+                    <td>4518</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        
+
+    </body>
+
+</html>
