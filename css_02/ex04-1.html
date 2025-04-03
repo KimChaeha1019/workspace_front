@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 
-<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+<html lang="ko">
+
     <head>
-        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+
+        <meta charset="UTF-8">
+
         <title>스타일시트</title>
-        <!-- 스타일시트자리 -->
 
         <style>
-            
-            /*큰 단위부터 순서대로 나열할 것*/
 
             table{
                 border-collapse: collapse;
                 text-align: center;
             }
 
-            /*css파일만 보고도 html이 어떻게 구성되어있는지 유추할 수 있게 하는 좋은 코드. 구조를 나타내는 코드*/
-            table thead{
-                background-color: #d5d5d5;
+            thead{
+                background-color: #CECDCD;
+            }
+
+            thead>tr{
+                border-top: 2px solid #8B8A8A;
+                border-bottom: 2px solid #8B8A8A;
+            }
+
+            tbody>tr{
+                border-bottom: 2px dotted #8B8A8A;
             }
 
             table>tbody>tr:hover{
                 background-color: #ffff00;
             }
-            
-            table>thead>tr>th, table>tbody>tr>td{
-                border: 1px solid #000000;
-            }
 
-            .txt-l{
-                text-align: left;
+            .txt-b-sol{
+                border-bottom: 2px solid #8B8A8A;
             }
 
         </style>
-    </head>
 
+    </head>
+    
     <body>
 
         <h1>mysite</h1>
@@ -52,9 +57,9 @@
                 <col style="width: 100px;">
                 <col style="width: 50px;">
             </colgroup>
-
+            
             <thead>
-
+                
                 <tr>
                     <th>번호</th>
                     <th>제목</th>
@@ -70,46 +75,46 @@
 
                 <tr>
                     <td>123</td>
-                    <td class="txt-l">게시판 게시글입니다.</td>
+                    <td>게시판 게시글입니다.</td>
                     <td>정우성</td>
                     <td>1232</td>
-                    <td>2025-04-03</td>
+                    <td>작성일</td>
                     <td>삭제</td>
                 </tr>
 
                 <tr>
                     <td>123</td>
-                    <td class="txt-l">게시판 게시글입니다.</td>
+                    <td>게시판 게시글입니다.</td>
                     <td>정우성</td>
                     <td>1232</td>
-                    <td>2025-04-03</td>
+                    <td>작성일</td>
                     <td>삭제</td>
                 </tr>
 
                 <tr>
                     <td>123</td>
-                    <td class="txt-l">게시판 게시글입니다.</td>
+                    <td>게시판 게시글입니다.</td>
                     <td>정우성</td>
                     <td>1232</td>
-                    <td>2025-04-03</td>
+                    <td>작성일</td>
                     <td>삭제</td>
                 </tr>
 
                 <tr>
                     <td>123</td>
-                    <td class="txt-l">게시판 게시글입니다.</td>
+                    <td>게시판 게시글입니다.</td>
                     <td>정우성</td>
                     <td>1232</td>
-                    <td>2025-04-03</td>
+                    <td>작성일</td>
                     <td>삭제</td>
                 </tr>
 
-                <tr>
+                <tr class="txt-b-sol">
                     <td>123</td>
-                    <td class="txt-l">게시판 게시글입니다.</td>
+                    <td>게시판 게시글입니다.</td>
                     <td>정우성</td>
                     <td>1232</td>
-                    <td>2025-04-03</td>
+                    <td>작성일</td>
                     <td>삭제</td>
                 </tr>
 
