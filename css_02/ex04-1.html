@@ -9,6 +9,37 @@
         <title>스타일시트</title>
 
         <style>
+            
+            /*
+            table{
+                border-collapse: collapse;
+                border: 1px solid #000000;
+            }
+
+            table>thead{
+                background-color: #d5d5d5;
+            }
+
+            너무 길어지는 경우는 어느정도 생략해서 쓰기
+            table>thead>tr{
+                border-top: 1px solid #000000;
+                border-bottom: 1px solid #000000;
+            }
+
+            table>tbody>tr{
+                border-bottom: 1px dashed #000000;
+            }
+            
+            tbody의 마지막 tr에 클래스{
+                border-bottom: 1px solid #000000;
+            }
+            ^지금은 되지만 나중에 반복문 코드를 짜면 못 쓸수도 있는 방법. 프로그램적으로 라스트를 찾아야 함.
+            ppt css 선택자의 형제선택자 참조.
+            -> talbe>tbody>tr::last-child{border-bottom: 1px solid #000000;}
+            ->
+        
+            */
+
 
             table{
                 border-collapse: collapse;
@@ -28,6 +59,10 @@
                 border-bottom: 2px dotted #8B8A8A;
             }
 
+            table>tbody>tr:nth-child(2n-1){
+                background-color: aqua;
+            } /*css 선택자의 형제선택자 참조*/
+
             table>tbody>tr:hover{
                 background-color: #ffff00;
             }
@@ -35,6 +70,8 @@
             .txt-b-sol{
                 border-bottom: 2px solid #8B8A8A;
             }
+
+            
 
         </style>
 
