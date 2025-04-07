@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+         <link rel="stylesheet" href="./ex20.css">
+
+    </head>
+
+    <body>
+
+        <div class="wrap"> <!--필요 시 바깥의 껍데기를 싸서 간소화. 보통 클래스명을 wrap으로 씀.-->
+
+            <!--h1 사이트명, h2 고객센터-->
+
+            <form action="" method="">
+
+                <!--게시판선택-->
+                <h3>일반게시판</h3> <!--h3가 기본값 마진을 가지고 있어서 0px로 초기화시켜도 변화X. body가 아니라 사용한 전체 태그들을 붙여서 전체초기화-->
+                
+                <div class="form-group">
+                    <label for="sel-board"  class="form-title">게시판선택</label>               
+                    <select id="sel-board">
+                        <option>선택해주세요</option>
+                        <option>공지사항</option>
+                        <option>가입인사</option>
+                        <option>유머게시판</option>
+                        <option>기타게시판</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <ul>
+                        <li>홈</li>
+                        <li>게시판</li>
+                        <li>일반게시판</li>
+                    </ul>
+                </div>
+
+                <!--제목-->
+                <div class="form-group">
+                    <label for="txt-title" class="form-title">제목</label> <!--인라인블록-->
+                    <input id="txt-title" type="text" placeholder="제목을 입력해 주세요" name="" value="" >
+                </div>
+
+                <!--비밀번호-->
+                <div class="form-group">
+                    <label for="txt-pw" class="form-title">비밀번호</label> 
+                    <input id="txt-pw" type="password" placeholder="패스워드를 입력하세요" name="" value="">
+                </div>
+
+                <!--공개범위-->
+                <div class="form-group">
+                    
+                    <span class="form-title">공개범위</span>
+
+                    <label for="rdo-me">본인</label>
+                    <input id="rdo-me" type="radio" name="range" value="">
+                    
+                    <label for="rdo-login">로그인회원</label>
+                    <input id="rdo-login" type="radio" name="range" value="">
+
+                    <label for="rdo-friend">친구</label>
+                    <input id="rdo-friend" type="radio" name="range" value="">
+
+                    <label for="rdo-all">전체</label>       
+                    <input id="rdo-all" type="radio" name="range" value="">
+
+                </div>
+
+                <!--이용범위-->
+                <div class="form-group">
+                    
+                    <span class="form-title">이용범위</span>
+
+                    <label for="chk-mention">댓글허용</label>
+                    <input id="chk-mention" type="checkbox" name="" value="">
+
+                    <label for="chk-reply">답글허용</label>
+                    <input id="chk-reply" type="checkbox" name="" value="">
+
+                    <label for="chk-good">좋아요허용</label>
+                    <input id="chk-good" type="checkbox" name="" value="">
+
+                </div>
+
+                <!--글내용-->
+                <div class="form-group">
+                    <textarea></textarea>
+                </div>
+
+                <!--첨부파일-->
+                <div class="form-group">
+                    <label for="txt-file" class="form-title">첨부파일</label>
+                    <input id="txt-file" type="file">
+                </div>
+
+                <!---->
+                <div class="btn-group">
+                    <button type="submit">등록</button>
+                    <button type="reset">초기화</button>
+                </div>
+
+            </form>
+
+        </div>
+        <!--//wrap-->
+
+    </body>
+
+</html>
