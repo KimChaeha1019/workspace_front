@@ -1,7 +1,93 @@
 @charset "UTF-8";
 
+
+body, div, ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, input, fieldset, 
+legend, p, select, textarea, 
+button, form{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
     background-color: #808080;
     font-family: "맑은 고딕";
     font-size: 12px;
+}
+
+.wrap{
+    background-color: #ffffff;
+    width: 600px;
+}
+
+.wrap h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*공통*/
+.form-group{
+    border-bottom: 1px solid #000000;
+    padding: 10px 0px;
+}
+
+.form-title{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    
+}
+/*//공통*/
+
+
+/*리스트*/
+ul li{
+    list-style-type: none;
+    float: left;
+}
+
+ul li::after{
+    content: ">";
+}
+
+.list{
+    padding: 10px 0px;
+}
+
+/*주소*/
+.txt-ad{
+    width: 340px;
+    margin: 3px 0px;
+}
+/*//주소*/
+
+input, select, textarea{
+    font-family: "맑은 고딕";
+    font-size: 15px;
+}
+
+.form-group>.rdo-label, 
+.form-group>.chk-label{
+    font-family: "맑은 고딕";
+    font-size: 15px;
+}
+
+/*자기소개*/
+.form-group textarea{
+    width: 340px;
+    height: 100px;
+}
+
+textarea{
+    overflow-y: auto;
+}
+
+/*버튼*/
+.btn-group{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.btn-group button{
+    width: 120px;
 }

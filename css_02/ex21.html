@@ -11,12 +11,181 @@
 
     <body>
 
-        <h3>회원가입</h3>
+        <form action="" method="">
 
-        <div>
-            아이디
-            <input type="text">
-        </div>
+            <div class="wrap">
+
+                <h3>회원가입</h3>
+
+                <div class="list">
+                    <ul>
+                        <li>홈</li>
+                        <li>유저</li>
+                        <li>회원가입</li>
+                    </ul>
+                </div>
+
+           
+                <!--아이디-->
+                <div class="form-group">
+
+                    <label class="form-title" for="txt-id">아이디</label>
+                    <input id="txt-id" type="text" placeholder="아이디를 입력하세요" name="" value="">
+                    
+                </div>
+
+                <!--패스워드-->
+                <div class="form-group">
+
+                    <label class="form-title" for="txt-pw">패스워드</label>
+                    <input id="txt-pw" type="password" placeholder="패스워드를 입력하세요" name="" value="">
+
+                </div>
+
+                <!--이름-->
+                <div class="form-group">
+
+                    <label class="form-title" for="txt-name">이름</label>
+                    <input id="txt-name" type="text" placeholder="이름을 입력하세요" name="" value="">
+                
+                </div>
+
+                <!--프로필사진-->
+                <div class="form-group">
+
+                    <label class="form-title" for="txt-file">프로필사진</label>
+                    <input id="txt-file" type="file" >
+
+                </div>
+
+                <!--주소-->
+                <div class="form-group">
+
+                    <label class="form-title">주소</label>
+                    <input type="text" placeholder="주소벨류" name="" value="">
+                    <button type="submit" placeholder="주소벨류" name="" value="">우편번호찾기</button>
+
+                    <div>
+                        <label class="form-title"></label>
+                        <input class="txt-ad" type="text" placeholder="주소벨류" name="" value="">
+                    </div>
+
+                </div>
+
+                <!--이동통신사-->
+                <div class="form-group">
+
+                    <label class="form-title" for="sel-telecom">이동통신사</label>
+
+                    <select id="sel-telecom">
+                        <option>선택해주세요</option>
+                        <option>KT</option>
+                        <option>SKT</option>
+                        <option>LG U+</option>
+                        <option>알뜰폰</option>
+                    </select>
+
+                </div>
+
+                <!--나이-->
+                <div class="form-group">
+
+                    <span class="form-title">나이</span>
+
+                    <span class="rdo-label">
+                        
+                        <label for="rdo-10">10대</label>
+                        <input id="rdo-10" type="radio" name="range" value="">
+
+                        <label for="rdo-20">20대</label>
+                        <input id="rdo-20" type="radio" name="range" value="">
+
+                        <label for="rdo-30">30대</label>
+                        <input id="rdo-30" type="radio" name="range" value="">
+
+                        <label for="rdo-40">40대</label>
+                        <input id="rdo-40" type="radio" name="range" value="">
+
+                        <label for="rdo-ex">기타</label>
+                        
+                        <input id="rdo-ex" type="radio" name="range" value="">
+                    </span>
+
+                </div>
+
+                <!--혈액형-->
+                <div class="form-group">
+
+                    <span class="form-title">혈액형</span>
+
+                    <span class="rdo-label">
+                        
+                        <label for="rdo-a">A형</label>
+                        <input id="rdo-a" type="radio" name="range" value="">
+                        
+                        <label for="rdo-b">B형</label>
+                        <input id="rdo-b" type="radio" name="range" value="">
+
+                        <label for="rdo-c">C형</label>
+                        <input id="rdo-c" type="radio" name="range" value="">
+
+                        <label for="rdo-ab">AB형</label>
+                        <input id="rdo-ab" type="radio" name="range" value="">
+
+                    </span>
+
+                </div>
+
+                <!--취미-->
+                <div class="form-group">
+
+                    <span class="form-title">취미</span>
+                    
+                    <span class="chk-label">
+
+                        <label for="chk-book">독서</label>
+                        <input id="chk-book" type="checkbox" name="checkbox" value="">
+
+                        <label for="chk-musci">음악</label>
+                        <input id="chk-music" type="checkbox" name="checkbox" value="">
+
+                        <label for="chk-trip">여행</label>
+                        <input id="chk-trip" type="checkbox" name="checkbox" value="">
+
+                        <label for="chk-movie">영화</label>
+                        <input id="chk-movie" type="checkbox" name="checkbox" value="">
+
+                        <label for="chk-coding">코딩</label>
+                        <input id="chk-coding" type="checkbox" name="checkbox" value="">
+
+                        <label for="chk-ex">기타</label>
+                        <input id="chk-ex" type="checkbox" name="checkbox" value="">
+
+                    </span>
+
+                </div>
+
+                <!--자기소개-->
+                <div class="form-group">
+
+                    <label class="form-title">자기소개</label>
+
+                    <textarea></textarea>
+                    
+                </div>
+
+                <!--등록, 초기화-->
+                <div class="btn-group">
+
+                    <button type="submit">등록</button>
+                    <button type="reset">초기화</button>
+
+                </div>
+            
+            </div>
+            <!--//wrap-->
+
+        </form>
 
     </body>
 
