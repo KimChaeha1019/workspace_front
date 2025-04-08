@@ -46,6 +46,11 @@ li::after{
     margin: 2px;
 }
 
+.list{
+    display: inline-block;
+    padding: 10px 0px;
+}
+
 /*게시판선택*/
 .form-group #sel-board{
     width: 200px;

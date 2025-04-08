@@ -25,6 +25,11 @@ body{
     font-weight: bold;
 }
 
+input, select, textarea{
+    font-family: "맑은 고딕";
+    font-size: 15px;
+}
+
 /*공통*/
 .form-group{
     border-bottom: 1px solid #000000;
@@ -51,34 +56,33 @@ ul li::after{
 }
 
 .list{
+    display: inline-block;
     padding: 10px 0px;
 }
 
 /*주소*/
 .txt-ad{
     width: 340px;
-    margin: 3px 0px;
+    margin: 3px 0px 0px 0px;
 }
 /*//주소*/
 
-input, select, textarea{
-    font-family: "맑은 고딕";
-    font-size: 15px;
-}
-
+/*나이, 혈액형, 취미*/
 .form-group>.rdo-label, 
 .form-group>.chk-label{
     font-family: "맑은 고딕";
     font-size: 15px;
 }
 
+.form-group .rdo-label input,
+.form-group .chk-label input{
+    margin-right: 10px;
+}
+
 /*자기소개*/
 .form-group textarea{
     width: 340px;
     height: 100px;
-}
-
-textarea{
     overflow-y: auto;
 }
 
