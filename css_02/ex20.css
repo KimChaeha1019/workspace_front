@@ -2,7 +2,7 @@
 
 /*초기화*/
 /*비슷한 것 끼리 태그를 정리해두면 나중에 파악하기가 쉬움*/
-body, div, 
+/*body, div, 
 ul, li, dl, dt, ol, 
 h1, h2, h3, h4, h5, h6, 
 form, input, select, textarea, button, fieldset, legend, 
@@ -10,6 +10,15 @@ p, table, th, td, tr{
     margin: 0px;
     padding: 0px;
 }
+
+input, select, textarea{
+    font-family: inherit;
+    font-size: inherit;
+}*/
+/*inherit=부모에 있는 것을 강제로 상속. 
+보통은 상속하면 아래로 내려가지만 위에서 상속해도 받지 X. 
+지금의 경우는 body에 있는 것을 상속하도록 해줌.*/
+
 
 body{
     background-color: #808080;
@@ -35,7 +44,7 @@ body{
     /*border: 1px solid #000000;*/
 }
 
-/*리스트*/
+/*경로표시
 li{
     float: left;
     list-style-type: none;
@@ -49,6 +58,24 @@ li::after{
 .list{
     display: inline-block;
     padding: 10px 0px;
+}*/
+
+.wrap ol{
+    list-style-type: none;
+    margin: 10px 0px 10px 0px;
+}
+
+.wrap ol>li{
+    float: left;
+}
+
+.wrap ol>li::after{
+    content: ">";
+    padding: 0px 5px 0px 5px;
+}
+
+.wrap ol>li:last-child::after{
+    content:"";
 }
 
 /*게시판선택*/
@@ -69,6 +96,7 @@ li::after{
 .form-title{
     display: inline-block;
     width: 80px;
+    vertical-align: top;
 }
 
 /*공개범위, 허용범위*/
@@ -80,7 +108,7 @@ li::after{
 
 /*글내용*/
 .form-group textarea{
-    width: 686px;
+    width: 500px;
     height: 70px;
 }
 
@@ -96,4 +124,14 @@ li::after{
 .btn-group button{
     width: 60px;
     height: 30px;
+}
+
+/* clearfix */
+.clearfix::before, .clearfix::after {
+    display: block;
+    content: ""; line-height: 0;
+}
+
+.clearfix::after{
+    clear: both;
 }

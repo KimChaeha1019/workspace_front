@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* 레이아웃***************/
+
+body{
+    font-family: "맑은 고딕";
+    font-size: 12px;
+    color: #000;
+}
+
+#wrap{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#header{
+    padding: 10px 0px 10px 0px;
+}
+
+#nav{
+    padding: 10px 93px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#content{
+    border: 1px solid #000;
+}
+
+#footer{
+    border: 1px solid #000;
+}
+/* 레이아웃**************/
+
+
+/*헤더관련***************/
+#header h1{
+    font-size: 30px;
+    color: #79b30b;
+    font-weight: bold;
+
+    float: left;
+}
+
+#header ul{
+    float: right;
+    margin-top: 10px;
+}
+
+#header ul>li{
+    float: left;
+    padding: 3px 5px 3px 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    background-color: #e3e3e3;
+    border: 1px solid #a7a7a7;
+}
+/*헤더관련***************/
+
+/*네비게이션관련***************/
+#nav ol{
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#nav ol>li{
+    float: left;
+    margin-right: 188px;
+    border: 1px solid #000;
+}
+
+#nav ol>li:last-child{
+    margin-right: 0px;
+}
+/*네비게이션관련***************/
+
+/*컨텐츠관련***************/
+
+/*컨텐츠관련***************/

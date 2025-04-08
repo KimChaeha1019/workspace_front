@@ -18,12 +18,12 @@
                 <h3>회원가입</h3>
 
                 <!--리스트-->
-                <div class="list">
-                    <ul>
+                <div>
+                    <ol class="clearfix">
                         <li>홈</li>
                         <li>유저</li>
                         <li>회원가입</li>
-                    </ul>
+                    </ol>
                 </div>
 
            
@@ -65,11 +65,12 @@
                     <label class="form-title">주소</label>
                     <input type="text" placeholder="주소벨류" name="" value="">
                     <button type="submit" placeholder="주소벨류" name="" value="">우편번호찾기</button>
+                    
+                    <br>
+                
+                    <input class="txt-ad" type="text" placeholder="주소벨류" name="" value="">
 
-                    <div>
-                        <label class="form-title"></label>
-                        <input class="txt-ad" type="text" placeholder="주소벨류" name="" value="">
-                    </div>
+                    <!--br 마진으로 해결. 공란으로 주는 것은 읽어야 하는 값이 또 생기기 때문에 쓰면 안좋은 방법.-->
 
                 </div>
 
@@ -169,9 +170,9 @@
                 <!--자기소개-->
                 <div class="form-group">
 
-                    <label class="form-title">자기소개</label>
+                    <label class="form-title" for="txt-area">자기소개</label>
 
-                    <textarea></textarea>
+                    <textarea id="txt-area"></textarea>
                     
                 </div>
 

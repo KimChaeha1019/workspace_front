@@ -5,7 +5,8 @@
         <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
-         <link rel="stylesheet" href="./ex20.css">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./ex20.css">
 
     </head>
 
@@ -15,19 +16,27 @@
 
             <!--h1 사이트명, h2 고객센터-->
 
+            <!--게시판선택-->
+            <h3>일반게시판</h3> <!--h3가 기본값 마진을 가지고 있어서 0px로 초기화시켜도 변화X. body가 아니라 사용한 전체 태그들을 붙여서 전체초기화-->
+
+            <!--경로표시-->
+            <ol class="clearfix">
+                <li>홈</li>
+                <li>게시판</li>
+                <li>일반게시판</li>
+            </ol>
+
             <form action="" method="">
 
-                <!--게시판선택-->
-                <h3>일반게시판</h3> <!--h3가 기본값 마진을 가지고 있어서 0px로 초기화시켜도 변화X. body가 아니라 사용한 전체 태그들을 붙여서 전체초기화-->
-                
                 <!--홈,게시판,일반게시판-->
-                <div class="list">
-                    <ul>
-                        <li>홈</li>
-                        <li>게시판</li>
-                        <li>일반게시판</li>
-                    </ul>
-                </div>
+                <!--<div class="">
+                        <ol>
+                            <li>홈</li>
+                            <li>게시판</li>
+                            <li>일반게시판</li>
+                        </ol>
+                    </div>
+                -->
                 
                 <div class="form-group">
                     <label for="sel-board"  class="form-title">게시판선택</label>               
@@ -89,7 +98,8 @@
 
                 <!--글내용-->
                 <div class="form-group">
-                    <textarea></textarea>
+                    <label for="txt-area" class="form-title">자기소개</label>
+                    <textarea id="txt-area"></textarea>
                 </div>
 
                 <!--첨부파일-->
@@ -98,7 +108,7 @@
                     <input id="txt-file" type="file">
                 </div>
 
-                <!---->
+                <!--버튼-->
                 <div class="btn-group">
                     <button type="submit">등록</button>
                     <button type="reset">초기화</button>

@@ -9,6 +9,16 @@ button, form{
     margin: 0px;
 }
 
+/*클리어픽스*/
+.clearfix::before, .clearfix::after {
+    display: block;
+    content: ""; line-height: 0;
+}
+
+.clearfix::after{
+    clear: both;
+}
+
 body{
     background-color: #808080;
     font-family: "맑은 고딕";
@@ -40,30 +50,36 @@ input, select, textarea{
     display: inline-block;
     width: 120px;
     text-align: center;
-    
+    vertical-align: top;
 }
 /*//공통*/
 
 
-/*리스트*/
-ul li{
+/*경로표시*/
+.wrap ol{
     list-style-type: none;
+    margin: 10px 0px;
+}
+
+.wrap ol>li{
     float: left;
 }
 
-ul li::after{
+.wrap ol li::after{
     content: ">";
+    padding: 0px 5px 0px 5px;
 }
 
-.list{
-    display: inline-block;
-    padding: 10px 0px;
+.wrap ol li:last-child::after{
+    content: "";
 }
+
+
 
 /*주소*/
 .txt-ad{
     width: 340px;
-    margin: 3px 0px 0px 0px;
+    margin: 3px 0px 0px 124px;
 }
 /*//주소*/
 
@@ -95,3 +111,4 @@ ul li::after{
 .btn-group button{
     width: 120px;
 }
+
