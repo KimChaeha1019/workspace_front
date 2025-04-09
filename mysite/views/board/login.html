@@ -56,11 +56,12 @@
 
                 <!--왼쪽-->
                 <div id="aside">
-                    <h2>게시판</h2>
+                    <h2>회원</h2>
 
                     <ul>
-                        <li>일반게시판</li>
-                        <li>댓글게시판</li>
+                        <li>회원정보</li>
+                        <li>로그인</li>
+                        <li>회원가입</li>
                     </ul>
                 </div>
 
@@ -68,26 +69,34 @@
                 <div id="main">
 
                     <div id="main-head" class="clearfix">
-                        <h3>일반게시판</h3>
+                        <h3>로그인</h3>
 
                         <ol class="clearfix">
                             <li>홈</li>
-                            <li>게시판</li>
-                            <li>일반게시판</li> <!--오른쪽이 뜨는 이유는 lastchild 이후에 패딩이 들어가서. 이것도 고쳐야 함. -->
+                            <li>회원</li>
+                            <li>로그인</li> <!--오른쪽이 뜨는 이유는 lastchild 이후에 패딩이 들어가서. 이것도 고쳐야 함. -->
                         </ol>
                     </div>
 
                     <div id="login-form">
 
-                        <div id="login-id">
-                            <label for="id">아이디</label>
-                            <input id="id" type="text" placeholder="아이디를 입력하세요">
-                        </div>
+                        <div class="login-txt">
+                            <div id="login-id">
+                                <label for="id" class="form-id">아이디</label>
+                                <input id="id" type="text" placeholder="아이디를 입력하세요">
+                            </div>
 
-                        <div id="login-pw">
-                            <label for="pw">비밀번호</label>
-                            <input id="pw" type="text" placeholder="비밀번호를 입력하세요">
+                            <div id="login-pw">
+                                <label for="pw">비밀번호</label>
+                                <input id="pw" type="password" placeholder="비밀번호를 입력하세요">
+                            </div>
+                        </div>    
+
+                        <div class="login-btn">
+                            <a>로그인</a>
                         </div>
+                       
+
                     </div>
 
                 </div>
