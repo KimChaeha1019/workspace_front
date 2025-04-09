@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/***************************
+ * MySite공통
+***************************/
+
 /* 레이아웃***************/
 
 body{
@@ -15,20 +19,40 @@ body{
 
 #header{
     padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #585858;
 }
 
 #nav{
-    padding: 10px 93px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #585858;
 }
 
+/*컨텐츠1*/
 #content{
-    border: 1px solid #000;
+    padding: 20px;
 }
+
+/*컨텐츠2*/
+#content2{
+    padding: 20px 0px 20px 0px;
+}
+
+#content2 #aside{
+    margin-right: 16px;
+    float: left;
+    width: 180px;
+}
+
+#content2 #main{
+    width: 798px;
+    float: left;
+    width: 800px;
+}
+/*컨텐츠2*/
 
 #footer{
-    border: 1px solid #000;
+    padding: 10px 0px 10px 0px;
+    background-color: #dddddd;
 }
 /* 레이아웃**************/
 
@@ -58,6 +82,7 @@ body{
 /*헤더관련***************/
 
 /*네비게이션관련***************/
+/*
 #nav ol{
     float: left;
     font-size: 17px;
@@ -73,8 +98,76 @@ body{
 #nav ol>li:last-child{
     margin-right: 0px;
 }
+*/
+
+#nav ul>li{
+    width: 250px;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+}
+
 /*네비게이션관련***************/
 
-/*컨텐츠관련***************/
+/*컨텐츠2(게시판리스트)***************/
+#aside h2{
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;   
+    font-weight: bold; 
+    text-align: center;
+    background-color: #dddddd;
+}
 
-/*컨텐츠관련***************/
+#aside ul>li{
+    padding: 8px 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+}
+
+#main #main-head{
+    border-bottom: 1px solid black;
+    padding: 15px 0px 10px 0px;
+}
+
+#main #main-head h3{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main #main-head ol{
+    margin-top: 10px;
+    float: right;
+}
+
+#main #main-head ol>li{
+    float: left;
+}
+
+#main #main-head ol>li::after{
+    content: ">";
+    padding: 0px 3px 0px 3px;
+}
+
+#main #main-head ol>li:last-child::after{
+    content: "";
+    padding: 0px;
+}
+
+/*리스트 공통 선 합치기*/
+table{
+    border-collapse: collapse;
+}
+
+/*컨텐츠2(게시판리스트)***************/
+
+/*푸터관련***************/
+#footer{
+    text-align: center;
+}
+/*푸터관련***************/

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/***************************
+ * 게시판 관련 페이지에서만 사용(리스트, 등록폼, 수정폼, 읽기)
+***************************/
+
+
+/* 검색 */
+#main-search ol{
+    float: right;
+    margin: 13px 0px 4px 0px;
+}
+
+#main-search ol>li{
+    margin-left: 4px;
+    padding: 4px 10px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #a6a6a6;
+}
+
+#main-search ol>li:nth-child(2){
+    background-color: #dddddd;
+}
+/* /검색 */
+
+
+/* 리스트 */
+#main-list thead>tr{
+    max-width: 800px;
+    height: 40px;
+    border-top: 3px solid #a6a6a6;
+    border-bottom: 3px solid #a6a6a6;
+    background-color: #dddddd;
+}
+
+#main-list tbody>tr{
+    text-align: center;
+    height: 40px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+#main-list tbody>tr>td:nth-child(2){
+    text-align: left;
+}
+
+#main-list tbody>tr:hover{
+    background-color: #f1f5f8;
+}
+
+#main-pagebtn ol{
+    padding: 10px 228px;
+}
+
+#main-pagebtn ol>li{
+    float: left;
+    text-align: center;
+    margin: 0px;
+    width: 27px;
+}
+/* /리스트 */
+
+
+/* 등록폼 */
+#main-write{
+    float: right;
+    padding: 5px 12px 5px 12px;
+    border-radius: 3px;
+    font-size: 13px;
+    border: 1px solid #a6a6a6;
+    background-color: #dddddd;
+}
+/* /등록폼 */
+
+/* 로그인 폼 */
+#login-form{
+
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#login-id,
+#login-pw{
+    margin: 10px;
+}
+/* /로그인 폼 */
