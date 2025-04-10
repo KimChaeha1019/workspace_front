@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>MySite</title>
+
+        <link rel="stylesheet" href="../../assets/css/reset.css">
+        <link rel="stylesheet" href="../../assets/css/mysite.css">
+        <link rel="stylesheet" href="../../assets/css/board.css">
+    </head>
+
+    <body>
+
+        <div id="wrap">
+
+            <!--header-->
+            <div id="header" class="clearfix">
+                <h1>MySite</h1>
+
+                <ul class="clearfix">
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+
+                    <li>
+                        <a href="">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--nav-->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">입사지원서</a>
+                    </li>
+
+                    <li>
+                        <a href="">게시판</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">갤러리</a>
+                    </li>
+
+                    <li>
+                        <a href="">방명록</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--content-->
+            <div id="content2" class="clearfix">
+
+                <!--왼쪽-->
+                <div id="aside">
+                    <h2>게시판</h2>
+
+                    <ul>
+                        <li>일반갤러리</li>
+                        <li>파일첨부연습</li>
+                    </ul>
+                </div>
+
+                <!--오른쪽-->
+                <div id="main">
+
+                    <div id="main-head" class="clearfix">
+                        <h3>일반갤러리</h3>
+
+                        <ol class="clearfix">
+                            <li>홈</li>
+                            <li>게시판</li>
+                            <li>일반게시판</li> <!--오른쪽이 뜨는 이유는 lastchild 이후에 패딩이 들어가서. 이것도 고쳐야 함. -->
+                        </ol>
+                    </div>
+
+                    <div id="main-gallery">
+
+                        <div class="clearfix">
+                            <a class="img-btn" href="">이미지올리기</a>
+                        </div>
+
+                        <div class="img">
+                            <ul id="img-list" class="clearfix">
+                                <li>
+                                    <img src="../../assets/images/Gangho-dong.jpg" alt="강호동 사진">
+                                    <div>작성자 : 유재석</div>
+                                </li>
+
+                                <li>
+                                    <img src="../../assets/images/Jeongjae-Lee.jpg" alt="이정재 사진">
+                                    <div>작성자 : 유재석</div>
+                                </li>
+
+                                <li>
+                                    <img src="../../assets/images/JeonSoMin.jpg" alt="정소민 사진">
+                                    <div>작성자 : 유재석</div>
+                                </li>
+
+                                <li>
+                                    <img src="../../assets/images/JiseokJin.jpg" alt="지석진 사진">
+                                    <div>작성자 : 유재석</div>
+                                </li>
+                            </ul>
+
+                            <ul id="img-list2">
+                                <li>
+                                    <img src="../../assets/images/JungWooSung.jpg" alt="정우성 사진">
+                                    <div>작성자 : 유재석</div>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </div>    
+
+                </div>
+
+            </div>
+
+            <!--footer-->
+            <div id="footer">
+                <p>Copyright ⓒ 2025 김채하. All right reserved</p>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

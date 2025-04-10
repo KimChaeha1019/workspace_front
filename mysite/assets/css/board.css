@@ -71,3 +71,45 @@
     background-color: #dddddd;
 }
 /* /등록폼 */
+
+
+/* 이미지올리기 */
+.img-btn{
+    float: right;
+    padding: 7px 5px;
+    margin: 10px 0px 12px 0px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    background-color: #dddddd;
+}
+/* /이미지올리기 */
+
+/* 갤러리 */
+#main-gallery{
+    margin: 0px auto;
+}
+
+#main #main-gallery li>img{
+    width: 189px;
+}
+
+#main .img li{
+    float: left;
+    width: 189px
+    padding: 0px 3px 0px 3px;
+    margin: 0px 4px 5px 0px;
+    border: 1px solid #a6a6a6;
+}
+
+#main .img li:last-child{
+    margin-right: 0px;
+}
+
+#main .img li>div{
+    padding: 3px 0px 2px 0px;
+    font-weight: bold;    
+}
+/* /갤러리 */
+
+
+
