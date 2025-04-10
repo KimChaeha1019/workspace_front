@@ -112,8 +112,25 @@
     border-radius: 3px;
     background-color: #dddddd;
 }
-
 /* /일반게시판 */
+
+
+/* 게시판 글작성 */
+#main #main-write-title{
+    padding: 15px 0px 5px 0px;
+}
+
+#main #main-write-title>label{
+    display: inline-block;
+    text-align: left;   
+}
+
+#main #main-write-title>input[type="text"]{
+    margin-left: 30px;
+    width: 737px;
+    height: 22px;
+}
+/* 게시판 글작성 */
 
 
 /* 갤러리 */
@@ -149,5 +166,61 @@
 }
 /* /갤러리 */
 
+
+/* 일반방명록 */
+#guest-write{
+    margin: 14px 0px 30px 0px;
+}
+
+#guest-write-info tr td{
+    padding-left: 4px;
+    height: 35px;
+    text-align: left;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px 3px 0px 0px
+}
+
+#guest-write-info tr td input[type="text"],
+#guest-write-info tr td input[type="password"]{
+    width: 315px;
+    height: 24px;
+}
+
+#guest-write-txt{
+    padding: 4px 4px 2px 4px;
+    border: 1px solid #a6a6a6;
+    border-top: none;
+}
+
+#guest-write-txt>textarea{
+    width: 787px;
+    height: 140px;
+    overflow: auto;
+}
+
+#guest-write-btn{
+    padding: 9px 352px;
+    border: 1px solid #a6a6a6;
+    border-top: none;
+}
+
+#guest-write #guest-write-btn span{
+    padding: 4px 33px;
+    text-align: center;
+    background-color: #dddddd;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+}
+
+#main .guest-memory{
+    margin-top: 10px;
+}
+
+#main .guest-memory tr>td{
+    padding: 10px 0px 10px 9px;
+    text-align: left;
+    border: 1px solid #a6a6a6;
+}
+/* /일반방명록 */
 
 
