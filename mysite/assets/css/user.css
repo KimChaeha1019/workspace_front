@@ -46,8 +46,6 @@
 #login-id{
     margin-bottom: 18px;
 }
-
-
 /* /로그인 폼 */
 
 
@@ -171,7 +169,8 @@
     margin-right: 11px;
 }
 
-#user-sex{
+#user-form #user-sex{
     margin-bottom: 0px;
 }
+
 /* /회원정보수정 폼 */
