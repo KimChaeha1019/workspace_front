@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/***************************
+ * 로그인, 회원가입 관련 페이지에서만 사용(로그인, 회원가입, 회원정보)
+***************************/
+
+/* 로그인 폼 */
+/* 공통 */
+#login-form div>input[type="text"],
+#login-form div>input[type="password"]{
+    margin-left: 20px;
+    height: 27px;
+}
+
+#login-form div>label{
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+}
+
+.login-btn{
+    margin: 40px 199px 30px 199px;
+    font-size: 14px;
+    width: 100px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background-color: #dddddd;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+/* /공통 */
+
+#login-form{
+    margin: 13px 149px;
+    width: 500px;
+    height: 225px;
+    border: 1px solid black;
+}
+
+.login-txt{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+#login-id{
+    margin-bottom: 18px;
+}
+
+
+/* /로그인 폼 */
+
+
+/* 회원가입 폼 */
+/* 공통 */
+#signin-form div>input[type="text"],
+#signin-form div>input[type="password"],
+#signin-form .rdo-label,
+#signin-form #chk-agree[type="checkbox"]{
+    margin-left: 20px;
+    height: 27px;
+}
+
+#signin-form div>label,
+#signin-sex{
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+}
+
+.signin-txt>div{
+    margin-bottom: 18px
+}
+
+#chk-agree[type="checkbox"]{
+    vertical-align: middle;
+}
+
+.agree{
+    margin-bottom: 0px;
+}
+
+.signin-btn{
+    margin: 40px 199px 30px 199px;
+    font-size: 14px;
+    width: 100px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background-color: #dddddd;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+/* /공통 */
+
+#signin-form{
+    margin: 13px 149px;
+    width: 500px;
+    height: 353px;
+    border: 1px solid black;
+}
+
+.signin-txt{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+#signin-id{
+    margin-bottom: 18px;
+}
+
+.rdo-label input{
+    margin-right: 11px;
+}
+
+
+/* /회원가입 폼 */
+
+
+/* 회원정보수정 폼 */
+/* 공통 */
+#user-form #user-id>span,
+#user-form div>input[type="text"],
+#user-form div>input[type="password"],
+#user-form div>.rdo-user-label{
+    margin-left: 20px;
+    height: 27px;
+}
+
+#user-form div>label,
+#user-form span[class="user-label"]{
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+}
+
+#user-form .user-txt>div{
+    margin-bottom: 18px;
+}
+
+.user-btn{
+    margin: 40px 199px 30px 199px;
+    font-size: 14px;
+    width: 100px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background-color: #dddddd;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+/* /공통 */
+
+#user-form{
+    margin: 13px 149px;
+    width: 500px;
+    height: 308px;
+    border: 1px solid black;
+}
+
+.user-txt{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+#user-form #user-id>span{
+    font-weight: bold;
+}
+
+.rdo-user-label input{
+    margin-right: 11px;
+}
+
+#user-sex{
+    margin-bottom: 0px;
+}
+/* /회원정보수정 폼 */

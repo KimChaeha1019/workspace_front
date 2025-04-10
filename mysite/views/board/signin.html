@@ -69,34 +69,58 @@
                 <div id="main">
 
                     <div id="main-head" class="clearfix">
-                        <h3>로그인</h3>
+                        <h3>회원가입</h3>
 
                         <ol class="clearfix">
                             <li>홈</li>
                             <li>회원</li>
-                            <li>로그인</li> <!--오른쪽이 뜨는 이유는 lastchild 이후에 패딩이 들어가서. 이것도 고쳐야 함. -->
+                            <li>회원가입</li> <!--오른쪽이 뜨는 이유는 lastchild 이후에 패딩이 들어가서. 이것도 고쳐야 함. -->
                         </ol>
                     </div>
 
-                    <div id="login-form">
+                    <div id="signin-form">
 
-                        <div class="login-txt">
-                            <div id="login-id">
+                        <div class="signin-txt">
+
+                            <div id="signin-id">
                                 <label for="id">아이디</label>
                                 <input id="id" type="text" placeholder="아이디를 입력하세요">
+                                <button type="submit" name="" value="">중복체크</button>
                             </div>
 
-                            <div id="login-pw">
+                            <div id="signin-pw">
                                 <label for="pw">비밀번호</label>
                                 <input id="pw" type="password" placeholder="비밀번호를 입력하세요">
                             </div>
+
+                            <div id="signin-name">
+                               <label for="name">이름</label>
+                               <input id="name" type="text" placeholder="이름을 입력하세요">
+                            </div>
+
+                            <div>
+                                <span id="signin-sex">성별</span>
+
+                                <span class="rdo-label">
+                                    <label for="rdo-male">남</label>
+                                    <input id="rdo-male" type="radio" name="range" value="">
+
+                                    <label for="rdo-female">여</label>
+                                    <input id="rdo-female" type="radio" name="range" value="">
+                                </span>
+                            </div>
+
+                            <div class="agree">
+                                <label for="chk-agree">약관동의</label>
+                                <input id="chk-agree" type="checkbox">서비스 약관에 동의합니다.
+                            </div>
+
                         </div>    
 
-                        <div class="login-btn">
-                            <a>로그인</a>
+                        <div class="signin-btn">
+                            <a href="">회원가입</a>
                         </div>
-                       
-
+                    
                     </div>
 
                 </div>
